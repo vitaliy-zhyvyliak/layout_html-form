@@ -16,32 +16,26 @@
 
         <legend>Personal information</legend>
 
-        <div>
-          <label for="surName">Surname:</label>
+        <label class="fields" for="surName">Surname:
           <input
-            class="fields"
             type="text"
             name="surName"
             id="surName"
             autocomplete="off"
           >
-        </div>
+        </label>
 
-        <div>
-          <label for="name">Name:</label>
+        <label class="fields" for="name">Name:
           <input
-            class="fields"
             type="text"
             name="name"
             id="name"
             autocomplete="off"
           >
-        </div>
+        </label>
 
-        <div>
-          <label for="age">How old are You?</label>
+        <label class="fields" for="age">How old are You?
           <input
-            class="fields"
             type="number"
             name="age"
             id="age"
@@ -49,49 +43,41 @@
             max="100"
             value="12"
           >
-        </div>
+        </label>
 
-        <div>
-          <label for="date">Full date of birth:</label>
+        <label class="fields" for="date">Full date of birth:
           <input
-            class="fields"
             type="date"
             name="date"
             id="date"
           >
-        </div>
+        </label>
 
-        <div>
-          <label for="term">I accept the term of the agreement</label>
+        <label class="fields lastField" for="term">I accept the term of the agreement
           <input
-            class="fields lastField"
             type="checkbox"
             name="term"
             id="term"
           >
-        </div>
+        </label>
 
       </fieldset>
 
       <fieldset class="blocks">
         <legend>Registration</legend>
 
-        <div>
-          <label for="email">E-mail:</label>
+        <label class="fields" for="email">E-mail:
           <input
-            class="fields"
             type="email"
             name="email"
             id="email"
             placeholder="email@example.com"
             required
           >
-        </div>
+        </label>
 
-        <div>
-          <label for="pass">Password:</label>
+        <label class="fields lastField" for="pass">Password:
           <input
-            class="fields lastField"
             type="password"
             name="password"
             id="pass"
@@ -99,17 +85,15 @@
             maxlength="16"
             required
           >
-        </div>
+        </label>
 
       </fieldset>
 
       <fieldset class="blocks">
         <legend>An interesting fact about you!</legend>
 
-        <div>
-          <label >Do you love cats?</label>
+        <label class="fields">Do you love cats?
           <input
-            class="fields"
             type="radio"
             name="cat"
             id="catY"
@@ -117,38 +101,32 @@
           >
           <label for="catY">Yes</label>
           <input
-            class="fields"
             type="radio"
             name="cat"
             id="catN"
             value="no"
           >
           <label for="catN">No</label>
-        </div>
+        </label>
 
-        <div>
-          <label for="color">What is your favorite color?</label>
+        <label class="fields" for="color">What is your favorite color?
           <input
-            class="fields"
             type="color"
             name="color"
             id="color"
           >
-        </div>
+        </label>
 
-        <div>
-          <label for="time">What time do you go to bed?</label>
+        <label class="fields" for="time">What time do you go to bed?
           <input
-            class="fields"
             type="time"
             name="time"
             id="time"
             step="1"
           >
-        </div>
+        </label>
 
-        <div>
-          <label for="cars">What are your favorite brand of cars?</label>
+        <label class="fields" for="cars">What are your favorite brand of cars?
           <select
             name="cars"
             id="cars"
@@ -158,40 +136,36 @@
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
           </select>
-        </div>
+        </label>
 
-        <div>
-          <label for="rate">How do you rate our work?</label>
+        <label class="lastField" for="rate">How do you rate our work?
           <input
-            class="lastField"
             type="range"
             name="rate"
             id="rate"
           >
-        </div>
+        </label>
 
       </fieldset>
 
       <fieldset class="blocks">
         <legend>Additional info:</legend>
 
-        <div class="fields">
-          <label for="comment">Comments:</label>
+        <label class="fields" for="comment">Comments:
           <textarea
             name="comment"
             id="comment"
             cols="15"
             rows="2"
           ></textarea>
-        </div>
+        </label>
 
-        <div>
-          <label for="recommend">Would you recommend us?</label>
-          <select class="lastField" name="recommend" id="recommend">
+        <label class="lastField" for="recommend">Would you recommend us?
+          <select name="recommend" id="recommend">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
-        </div>
+        </label>
 
       </fieldset>
 
