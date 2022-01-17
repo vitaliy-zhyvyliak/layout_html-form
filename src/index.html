@@ -11,7 +11,194 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <fieldset class="blocks">
+
+        <legend>Personal information</legend>
+
+        <div>
+          <label for="surName">Surname:</label>
+          <input
+            class="fields"
+            type="text"
+            name="surName"
+            id="surName"
+            autocomplete="off"
+          >
+        </div>
+
+        <div>
+          <label for="name">Name:</label>
+          <input
+            class="fields"
+            type="text"
+            name="name"
+            id="name"
+            autocomplete="off"
+          >
+        </div>
+
+        <div>
+          <label for="age">How old are You?</label>
+          <input
+            class="fields"
+            type="number"
+            name="age"
+            id="age"
+            min="1"
+            max="100"
+            value="12"
+          >
+        </div>
+
+        <div>
+          <label for="date">Full date of birth:</label>
+          <input
+            class="fields"
+            type="date"
+            name="date"
+            id="date"
+          >
+        </div>
+
+        <div>
+          <label for="term">I accept the term of the agreement</label>
+          <input
+            class="fields lastField"
+            type="checkbox"
+            name="term"
+            id="term"
+          >
+        </div>
+
+      </fieldset>
+
+      <fieldset class="blocks">
+        <legend>Registration</legend>
+
+        <div>
+          <label for="email">E-mail:</label>
+          <input
+            class="fields"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@example.com"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="pass">Password:</label>
+          <input
+            class="fields lastField"
+            type="password"
+            name="password"
+            id="pass"
+            minlength="5"
+            maxlength="16"
+            required
+          >
+        </div>
+
+      </fieldset>
+
+      <fieldset class="blocks">
+        <legend>An interesting fact about you!</legend>
+
+        <div>
+          <label >Do you love cats?</label>
+          <input
+            class="fields"
+            type="radio"
+            name="cat"
+            id="catY"
+            value="yes"
+          >
+          <label for="catY">Yes</label>
+          <input
+            class="fields"
+            type="radio"
+            name="cat"
+            id="catN"
+            value="no"
+          >
+          <label for="catN">No</label>
+        </div>
+
+        <div class="fieldFix">
+          <label for="color">What is your favorite color?</label>
+          <input
+            class="fields"
+            type="color"
+            name="color"
+            id="color"
+          >
+        </div>
+
+        <div>
+          <label for="time">What time do you go to bed?</label>
+          <input
+            class="fields"
+            type="time"
+            name="time"
+            id="time"
+            step="1"
+          >
+        </div>
+
+        <div>
+          <label for="cars">What are your favorite brand of cars?</label>
+          <select
+            name="cars"
+            id="cars"
+            multiple
+          >
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </div>
+
+        <div class="fieldFix">
+          <label for="rate">How do you rate our work?</label>
+          <input
+            class="lastField fixField"
+            type="range"
+            name="rate"
+            id="rate"
+          >
+        </div>
+
+      </fieldset>
+
+      <fieldset class="blocks">
+        <legend>Additional info:</legend>
+
+        <div class="fields">
+          <label for="comment">Comments:</label>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="15"
+            rows="2"
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="recommend">Would you recommend us?</label>
+          <select class="lastField" name="recommend" id="recommend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+
+      </fieldset>
+
+      <button type="submit">Submit</button>
+
+    </form>
+
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

@@ -1,1 +1,25 @@
 /* styles go here */
+
+.blocks {
+  margin-bottom: 20px;
+}
+
+.fields {
+  margin-bottom: 10px;
+}
+
+.lastField {
+  margin-bottom: 0;
+}
+
+.fieldFix {
+  margin-top: 4px;
+}
+
+.fieldFix2 {
+  margin-top: 5px;
+}
+
+.fixField {
+  margin-top: 8px;
+}
